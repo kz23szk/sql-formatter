@@ -135,7 +135,7 @@ class SqlFormatter
     public static $cli_variable = "\x1b[36;1m";
 
     // The tab character to use when formatting SQL
-    public static $tab = '  ';
+    public static $tab = '    ';
 
     // This flag tells us if queries need to be enclosed in <pre> tags
     public static $use_pre = true;

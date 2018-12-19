@@ -1,22 +1,23 @@
 SqlFormatter
 =============
 
-A lightweight php class for formatting sql statements.
+[jdornさん作のSQL整形](https://github.com/jdorn/sql-formatter)をSequel Proで使うにあたって自分用に整形ルールを変更したもの。
 
-It can automatically indent and add line breaks in addition to syntax highlighting.
+[使い方はこちら](https://qiita.com/wapa5pow/items/ab6eede8a799f8de4587)
+※実際に使うのは/lib/SqlFormatter.phpのみ
+
+[SQLの整形規約](https://techlife.cookpad.com/entry/2016/11/09/000033)
+全部準拠というわけではありませんが、経験上
+
+- すべて小文字(打ちやすさ、シンタックスハイライトで分かるはず）
+- カンマや演算子を前に(カンマ,and忘れが一目瞭然)
+
+が良いと思ってこれに沿っています。
+
 
 History
 ============
 
-I found myself having to debug auto-generated SQL statements all the time and
-wanted some way to easily output formatted HTML without having to include a 
-huge library or copy and paste into online formatters.
-
-I was originally planning to extract the formatting code from PhpMyAdmin,
-but that was 10,000+ lines of code and used global variables.
-
-I saw that other people had the same problem and used Stack Overflow user 
-losif's answer as a starting point.  http://stackoverflow.com/a/3924147
 
 Usage
 ============
